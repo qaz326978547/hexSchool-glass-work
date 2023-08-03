@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Noto Sans TC', sans-serif;
+        font-family: 'Roboto', sans-serif;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    img {
+        display: block;
+        object-fit: cover;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        background-color: #aa0601;
+        color: #fff;
+    }
+    .icon {
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .icon-money {
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-1.png?raw=true');
+        width: 100px;
+        height: 100px;
+    }
+
+    .icon-clock {
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-2.png?raw=true');
+        width: 100px;
+        height: 100px;
+    }
+
+    .icon-favorite {
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-3.png?raw=true');
+        width: 100px;
+        height: 100px;
+    }
+
+    .icon-glass {
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-sectioin2-4.png?raw=true');
+        width: 100px;
+        height: 100px;
+    }
+    .icon_phone {
+        background-image: url('@/assets/icons/ic_phone.svg');
+    }
+    .icon_mail {
+        background-image: url('@/assets/icons/ic_mail.svg');
+    }
+    .icon_facebook {
+        background-image: url('@/assets/icons/ic-social_fb.png');
+    }
+    .icon_instagram {
+        background-image: url('@/assets/icons/ic_social_ig.png');
+    }
+    .icon_line {
+        background-image: url('@/assets/icons/ic_social_line.png');
+    }
+}
+
+@layer utilities {
+    .shadow-card {
+        box-shadow: 0px 2px 6px #00000029;
+    }
+}
