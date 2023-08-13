@@ -6,7 +6,11 @@
         <h2 class=" md:text-4xl text-primary-default  text-right">Promise-Desert 2020 早春系列</h2>
         <span class="md:text-7xl text-primary-default  text-2xl font-bold">看得清，才能看得遠</span>
         <div class="text-right">
-          <button class="text-white bg-primary-light text-xl py-[6px] px-3 mt-2">立即購買</button>
+          <button class="btn-primary text-xl py-[6px] px-3 mt-2">
+            <router-link :to="{ name: 'Products' }">
+              立即購買
+            </router-link>
+          </button>
         </div>
       </div>
     </div>

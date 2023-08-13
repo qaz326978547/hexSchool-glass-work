@@ -15,12 +15,20 @@
         display: block;
         object-fit: cover;
     }
+    a:hover {
+        opacity: 0.8;
+    }
 }
 
 @layer components {
     .btn-primary {
         background-color: #aa0601;
         color: #fff;
+    }
+    .btn-primary:hover {
+        background-color: #fff;
+        color: #aa0601;
+        transition: all 0.3s ease-in-out;
     }
     .icon {
         display: inline-block;
@@ -65,6 +73,33 @@
     }
     .icon_line {
         background-image: url('@/assets/icons/ic_social_line.png');
+    }
+    .icon_clock {
+        background-image: url('@/assets/icons/ic_clock.svg');
+    }
+    .icon_map {
+        background-image: url('@/assets/icons/ic_map.svg');
+    }
+    .icon_call {
+        background-image: url('@/assets/icons/phone.svg');
+    }
+    .icon_search {
+        background-image: url('@/assets/icons/ic_search.svg');
+    }
+    .icon_facebook_black {
+        background-image: url('@/assets/icons/logo-facebook.png');
+    }
+    .icon_instagram_black {
+        background-image: url('@/assets/icons/logo-instagram.png');
+    }
+    .icon_left {
+        background-image: url('@/assets/icons/ic_left.svg');
+    }
+    .icon_right {
+        background-image: url('@/assets/icons/ic_right.svg');
+    }
+    .icon_tag {
+        background-image: url('@/assets/icons/ic_tag.svg');
     }
 }
 
